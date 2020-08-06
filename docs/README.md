@@ -54,11 +54,11 @@ The following here are the pictures of the geoplot generated with folium:
 
 #### New York:
 
-![New York Geoplot]("Screen Shot 2020-08-06 at 03.21.20.png")
+![New York Geoplot] ("Screen Shot 2020-08-06 at 03.21.20.png")
 
 #### Chicago:
 
-![Chicago Geo plot](Screen Shot 2020-08-06 at 03.21.49.png.png)
+![Chicago Geo plot] (Screen Shot 2020-08-06 at 03.21.49.png)
 
 #### San Francisco: 
 
