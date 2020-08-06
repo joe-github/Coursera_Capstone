@@ -54,27 +54,29 @@ The following here are the pictures of the geoplot generated with folium:
 
 #### New York:
 
-![New York Geoplot] ("Screen Shot 2020-08-06 at 03.21.20.png")
+![New York Geoplot](ny-1.png)
 
 #### Chicago:
 
-![Chicago Geo plot] (Screen Shot 2020-08-06 at 03.21.49.png)
+![Chicago Geoplot](chi-1.png)
 
 #### San Francisco: 
 
-![SF](1570115744107.png)
+![SF Geoplot](sf-1.png)
 
 #### Jersey City:
 
-![Jc](1570115780585.png)
+![Jc Geoplot](jc-1.png)
 
 #### Boston: 
 
-![1570115810909](1570115810909.png)
+![Boston Geoplot](bo-1.png)
 
-## 
+## Discussion:
 
-It's a little bit hard to tell which city will be easy to find a Chinese Restaurant in mean distance or time.  So let's have a concrete measure of this density. For this I will use some basic statistics. I will get the mean location of the Chinese Restaurant places which should be near to most of them if they are really dense or far if not. Upon First inspection we see that New York, Jersey City and San Francisco are the most densely cities. In the next phase we Calculate the Mean coordinate and the mean distance to mean coordinate(MDMC). We represent the mean coordinate with a big green circle and distances with green lines
+It's a little bit hard to tell which city will be easy to find a Chinese Restaurant in mean distance or time.  So let's have a concrete measure of this density. For this I will use some basic statistics. I will get the mean location of the Chinese Restaurant places which should be near to most of them if they are really dense or far if not. Upon First inspection we see that New York, Jersey City and San Francisco are the most densely cities. In the next phase we Calculate the Mean coordinate and the mean distance to mean coordinate(MDMC). We represent the mean coordinate with a big green circle and distances with green lines. One consideration to do further work on is to move the location of the Foursquare API query until we get all the places in each city and do the calculations again. 
+
+Therefore our results are : 
 
 | city     |       means         |
 |---------------|----------------|
@@ -84,44 +86,26 @@ It's a little bit hard to tell which city will be easy to find a Chinese Restaur
 | Boston        |  0.028492 |
 | Chicago       |  0.045421 |
 
+#### Jersey City:
 
-#### New York: 
+![Jc Geoplot](jc-2.png)
 
-MDMC: 0.021556
+#### New York:
 
-![1570116007629](1570116007629.png)
-
-#### Chicago: 
-
-MDMC: 0.052805
-
-![1570116072129](1570116072129.png)
+![New York Geoplot](ny-2.png)
 
 #### San Francisco: 
 
-MDMC: 0.028633
+![SF Geoplot](sf-2.png)
 
-![1570116146328](1570116146328.png)
+#### Boston: 
 
-#### Jersey City:
+![Boston Geoplot](bo-2.png)
 
-MDMC: 0.029950
+#### Chicago:
 
-![1570116170991](1570116170991.png)
+![Chicago Geoplot](chi-2.png)
 
-####  Boston: 
-
-MDMC: 0.035126
-
-Therefore our results are : 
-
-## Discussion:
-
-One thing I noticed in the figure is that there is a really far away Pizza Store in Jersey City that is probably giving it a higher MDMC. So I cheched what if I removed it, it would not harm anyone to try 99 pizza places than 100 and New York is just at the other shore. 
-
-The new MDMC was: 0.0219953, putting it one place up on the list replacing San Francisco. 
-
-One consideration to do further work on is to move the location of the Foursquare API query until we get all the pizza places in each city and do the calculations again. 
 
 ## Conclusion and an intresting finding
 Eventhough, New York has the most number of Chinese Restaurants, but from mean distance that Jersey City, NJ is even more density comparing to NYC, that's an very interesting finding. It's very diffciult to say which city is more easier.  To my personal experience, I would put that New York as best option. And as aplus the 2nd best place is Jersey City which is just on the other side of the shore. Our tourist's best interest would be to book a hotel near that mean coordinate to surround himself with the 100 Chinese Restaurant there!!  If our tourist is done with all the New York places he can cross to Jersey City and enjoy more there. Also, we would recommend that our tourist book a hotel close to the mean coordinate. 
