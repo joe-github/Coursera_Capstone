@@ -37,3 +37,11 @@ The 4bf58dd8d48988d1ca941735 is the Category Id of the Chinese Restaurant Catego
 And then this request repeated for the five US cities and got their top 100 venues. The name and coordinate data from the result is stored and plotted in maps for visual inspection.
 
 In the end, to calcuate indicator of the density of Chinese Restaurants, the project calculated a center coordinate of the venues to get the mean longitude and latitude values. Then the mean of Euclidean distance from each venue to the mean coordinates is calculated, these indicator: mean distance to the mean coordinate, will tell which city has the highest density, so that we will know it suppose to be easier to find a Chinese Restaurant.
+
+## Results
+
+We can see that New York and San Francisco have the most Chinese Restaurants in the five big cities, and according to the map, these restaurants are scattered in different patterns. It's a little bit hard to tell which city will be easy to find a Chinese Restaurant in mean distance or time.  So let's have a concrete measure of this density. For this I will use some basic statistics. I will get the mean location of the Chinese Restaurant places which should be near to most of them if they are really dense or far if not. 
+
+### Let's run average of the distance of the venues to the mean coordinates. 
+### An intresting finding
+Eventhong, New York has the most number of Chinese Restaurants, but from mean distance that Jersey City, NJ is even more density comparing to NYC, that's an very interesting finding. It's very diffciult to say which city is more easier.  To my personal experience, I would put that New York as best option. And as aplus the 2nd best place is Jersey City which is just on the other side of the shore. Our tourist's best interest would be to book a hotel near that mean coordinate to surround himself with the 100 Chinese Restaurant there!!
