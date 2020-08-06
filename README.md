@@ -1,13 +1,12 @@
 # Which city is more easy to find a Chinese Restaurant
 
 ## Introduction
+
 如果你会中文，看到这段文字一定会很亲切。今天想用在Coursera上学习到的一些Data Science的知识，借助Python解决一个中国人去美国，哪个城市更容易找到中餐馆呢？
 
 Today, I want to use some of the data science knowledge I learned on Coursera, and use Python to solve a Chinese person going to the United States. Which city is easier to find a Chinese restaurant?  Let’s say if you are a Chinese and have never been to the US. The first question that you may wonder is which city maybe easy to find a Chinese Restaurant while you are there. So you want to go to a place with a high density of Chinese Restaurants around there. The solution is to analyze the locations of Chinese Restaurants in a few major US cities and find the best city which can easily find a good Chinese Restaurant. 
 
 Also this solution could be a good reference for any tourists with a taste of eastern-style food.  This final project explores the locations for Chinese restaurants throughout New York, Chicago, San Francisco, Jersery City and Boston, all are very famous tourism cities and also many Chinese residents.  The project will attempt to answer the questions “Which city is more easy to find a Chinese Restaurant?"
-
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
 
 ## Data
 
