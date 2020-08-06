@@ -26,7 +26,7 @@ And I will use explore endponts of place APIs from FourSquare (https://developer
 
 ## Methodology
 
-By exploreing Chinese Restaurant locations in the five major US cities with the Four Square API through the explore endpoint to find all Chinese Restaurant venues info.  The near function query is used to get venues in these cities, and also using the CategoryID to fillter out only Chinese Restaurant. 
+By exploring Chinese Restaurant locations in the five major US cities with the Four Square API through the explore endpoint to find all Chinese Restaurant venues info.  The near function query is used to get venues in these cities, and also using the CategoryID to fillter out only Chinese Restaurant. 
 
 Here is an example of the explore request:
 
@@ -36,17 +36,17 @@ The 4bf58dd8d48988d1ca941735 is the Category Id of the Chinese Restaurant Catego
 
 And then this request repeated for the five US cities and got their top 100 venues. The name and coordinate data from the result is stored and plotted in maps for visual inspection.
 
-In the end, to calcuate indicator of the density of Chinese Restaurants, the project calculated a center coordinate of the venues to get the mean longitude and latitude values. Then the mean of Euclidean distance from each venue to the mean coordinates is calculated, these indicator: mean distance to the mean coordinate, will tell which city has the highest density, so that we will know it suppose to be easier to find a Chinese Restaurant.
+In the end, to calculate indicator of the density of Chinese Restaurants, the project calculated a center coordinate of the venues to get the mean longitude and latitude values. Then the mean of Euclidean distance from each venue to the mean coordinates is calculated, these indicator: mean distance to the mean coordinate, will tell which city has the highest density, so that we will know it suppose to be easier to find a Chinese Restaurant.
 
 ## Results
 
-| City      |     Restaurant numbers     |
-|----------------------|-----------|
+| City  |   Restaurant numbers  |
+|----------------------|--------|
 | New York             |    237 |
-| Chicago              |    230 |
 | San Francisco        |    236 |
-| Jersey City          |    157 |
+| Chicago              |    230 |
 | Boston               |    192 |
+| Jersey City          |    157 |
 
 From the above table, we can tell that New York and San Francisco have the most Chinese Restaurants in the five big cities, and according to the map, these restaurants are scattered in different patterns.
 
@@ -56,25 +56,27 @@ The following here are the pictures of the geoplot generated with folium:
 
 ![New York Geoplot](ny-1.png)
 
-#### Chicago:
-
-![Chicago Geoplot](chi-1.png)
-
 #### San Francisco: 
 
 ![SF Geoplot](sf-1.png)
 
-#### Jersey City:
+#### Chicago:
 
-![Jc Geoplot](jc-1.png)
+![Chicago Geoplot](chi-1.png)
 
 #### Boston: 
 
 ![Boston Geoplot](bo-1.png)
 
+
+#### Jersey City:
+
+![Jc Geoplot](jc-1.png)
+
+
 ## Discussion:
 
-It's a little bit hard to tell which city will be easy to find a Chinese Restaurant in mean distance or time.  So let's have a concrete measure of this density. For this I will use some basic statistics. I will get the mean location of the Chinese Restaurant places which should be near to most of them if they are really dense or far if not. Upon First inspection we see that New York, Jersey City and San Francisco are the most densely cities. In the next phase we Calculate the Mean coordinate and the mean distance to mean coordinate(MDMC). We represent the mean coordinate with a big green circle and distances with green lines. One consideration to do further work on is to move the location of the Foursquare API query until we get all the places in each city and do the calculations again. 
+Very close numbers in NY/SFO/CHI. It's a little bit hard to tell which city will be easy to find a Chinese Restaurant in mean distance or time.  So let's have a concrete measure of this density. For this I will use some basic statistics. I will get the mean location of the Chinese Restaurant places which should be near to most of them if they are really dense or far if not. Upon First inspection we see that New York, Jersey City and San Francisco are the most densely cities. In the next phase we Calculate the Mean coordinate and the mean distance to mean coordinate(MDMC). We represent the mean coordinate with a big green circle and distances with green lines. One consideration to do further work on is to move the location of the Foursquare API query until we get all the places in each city and do the calculations again. 
 
 Therefore our results are : 
 
